@@ -4,98 +4,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mayuri Sandge | Portfolio</title>
+  <title>Mayuri Sandge</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background-color: #2d3748;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    main {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    h1 {
-      margin: 0;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .contact a {
-      color: #2b6cb0;
-      text-decoration: none;
-    }
-    .social a {
-      margin-right: 1rem;
-      color: #2b6cb0;
-    }
-    .label {
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <h1>Mayuri Sandge</h1>
-    <p>Data Analyst, Freelancer</p>
-    <p>Mumbai, Maharashtra</p>
-    <div class="contact">
-      <p><a href="mailto:mayurisandge@gmail.com">mayurisandge@gmail.com</a> | 📞 8976142009</p>
+  <nav>
+    <div class="container">
+      <h1>Mayuri Sandge</h1>
+      <p>Data Analyst | Freelancer</p>
     </div>
-    <div class="social">
-      <a href="https://github.com/MayuriS10">GitHub</a>
-      <a href="https://www.linkedin.com/in/mayuri-sandge-22aa7a1b5">LinkedIn</a>
-      <a href="https://www.hackerrank.com/profile/mayurisandge">HackerRank</a>
+  </nav>
+  <header class="hero">
+    <div class="container">
+      <p class="tagline">A statistics student captivated by the interplay of data to solve real-life problems and contribute to the growth of mankind.</p>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:mayurisandge@gmail.com">mayurisandge@gmail.com</a></p>
+        <p>Phone: 8976142009 | Mumbai, Maharashtra</p>
+        <p>
+          <a href="https://github.com/MayuriS10" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/mayuri-sandge-22aa7a1b5" target="_blank">LinkedIn</a> |
+          <a href="https://www.hackerrank.com/profile/mayurisandge" target="_blank">HackerRank</a>
+        </p>
+      </div>
     </div>
   </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>A statistics student captivated by the interplay of data to solve real-life problems and contribute to the growth of mankind.</p>
-    </section>
+  <main class="container">
     <section>
       <h2>Skills</h2>
-      <div>
-        <p class="label">Programming:</p>
-        <ul>
-          <li>Python</li>
-          <li>R-studio</li>
-          <li>SQL</li>
-          <li>Power BI</li>
-          <li>Excel</li>
-        </ul>
-        <p class="label">Technology:</p>
-        <ul>
-          <li>GitHub</li>
-          <li>Predictive modeling</li>
-          <li>Statistical modeling</li>
-          <li>Fraud detection analysis</li>
-          <li>Market mix modeling</li>
-          <li>Artificial Intelligence</li>
-          <li>Regression</li>
-          <li>Classification</li>
-          <li>Machine learning</li>
-          <li>Data Cleaning and model evaluation, optimization</li>
-        </ul>
-      </div>
+      <h3>Programming</h3>
+      <ul>
+        <li>Python</li>
+        <li>R-studio</li>
+        <li>SQL</li>
+        <li>Power BI</li>
+        <li>Excel</li>
+      </ul>
+      <h3>Technology</h3>
+      <ul>
+        <li>GitHub</li>
+        <li>Predictive modeling</li>
+        <li>Statistical modeling</li>
+        <li>Fraud detection analysis</li>
+        <li>Market mix modeling</li>
+        <li>Artificial Intelligence</li>
+        <li>Regression</li>
+        <li>Classification</li>
+        <li>Machine learning</li>
+        <li>Data Cleaning and model evaluation, optimization</li>
+      </ul>
     </section>
     <section>
       <h2>Work Experience</h2>
-      <p><strong>Data Analyst</strong><br>
-      Catseye Systems and Solutions (Apr 2022 - Present)</p>
+      <p><strong>Data Analyst</strong> – Catseye Systems and Solutions (Apr 2022 – Present)</p>
       <ul>
         <li>Migrated R models from Green-plum to CDP database.</li>
         <li>Developed custom solutions using R, Python, and SQL in collaboration with clients.</li>
@@ -105,9 +66,13 @@
     </section>
     <section>
       <h2>Education</h2>
-      <p><strong>Masters of Statistics and Data Analytics</strong><br>
-      Symbiosis Statistical Institute (2020 - 2022)</p>
+      <p><strong>Masters of Statistics and Data Analytics</strong><br>Symbiosis Statistical Institute (2020 – 2022)</p>
     </section>
   </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mayuri Sandge. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
