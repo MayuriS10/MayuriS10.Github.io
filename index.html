@@ -2,71 +2,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mayuri Sandge | Data Analyst</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayuri Sandge | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #2d3748;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .contact a {
+      color: #2b6cb0;
+      text-decoration: none;
+    }
+    .social a {
+      margin-right: 1rem;
+      color: #2b6cb0;
+    }
+    .label {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Mayuri Sandge</h1>
     <p>Data Analyst, Freelancer</p>
     <p>Mumbai, Maharashtra</p>
-    <p><a href="mailto:mayurisandge@gmail.com">mayurisandge@gmail.com</a> | 📞 8976142009</p>
-    <div>
-      <a href="https://github.com/MayuriS10">GitHub</a> |
-      <a href="https://www.linkedin.com/in/mayuri-sandge-22aa7a1b5">LinkedIn</a> |
+    <div class="contact">
+      <p><a href="mailto:mayurisandge@gmail.com">mayurisandge@gmail.com</a> | 📞 8976142009</p>
+    </div>
+    <div class="social">
+      <a href="https://github.com/MayuriS10">GitHub</a>
+      <a href="https://www.linkedin.com/in/mayuri-sandge-22aa7a1b5">LinkedIn</a>
       <a href="https://www.hackerrank.com/profile/mayurisandge">HackerRank</a>
     </div>
   </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>A statistics student captivated by the interplay of data to solve the real life problem and growth of mankind.</p>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <h3>Programming</h3>
-    <ul>
-      <li>Python</li>
-      <li>R-Studio</li>
-      <li>SQL</li>
-      <li>Power BI</li>
-      <li>Excel</li>
-    </ul>
-    <h3>Technology & Techniques</h3>
-    <ul>
-      <li>GitHub</li>
-      <li>Predictive Modeling</li>
-      <li>Statistical Modeling</li>
-      <li>Fraud Detection Analysis</li>
-      <li>Market Mix Modeling</li>
-      <li>Artificial Intelligence</li>
-      <li>Regression</li>
-      <li>Classification</li>
-      <li>Machine Learning</li>
-      <li>Data Cleaning, Model Evaluation, Optimization</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <h3>Data Analyst – Catseye Systems and Solutions</h3>
-    <p><em>Apr 2022 – Present</em></p>
-    <ul>
-      <li>Migrated R models from Green-plum to CDP database.</li>
-      <li>Developed custom solutions using R, Python, and SQL in collaboration with clients.</li>
-      <li>Automated data processing by scheduling R and Python scripts, improving efficiency.</li>
-      <li>Processed diverse datasets to extract insights, visualized with Tableau and Power BI.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p><strong>Masters of Statistics and Data Analytics</strong><br>
-    Symbiosis Statistical Institute<br>
-    2020 - 2022</p>
-  </section>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>A statistics student captivated by the interplay of data to solve real-life problems and contribute to the growth of mankind.</p>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <div>
+        <p class="label">Programming:</p>
+        <ul>
+          <li>Python</li>
+          <li>R-studio</li>
+          <li>SQL</li>
+          <li>Power BI</li>
+          <li>Excel</li>
+        </ul>
+        <p class="label">Technology:</p>
+        <ul>
+          <li>GitHub</li>
+          <li>Predictive modeling</li>
+          <li>Statistical modeling</li>
+          <li>Fraud detection analysis</li>
+          <li>Market mix modeling</li>
+          <li>Artificial Intelligence</li>
+          <li>Regression</li>
+          <li>Classification</li>
+          <li>Machine learning</li>
+          <li>Data Cleaning and model evaluation, optimization</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h2>Work Experience</h2>
+      <p><strong>Data Analyst</strong><br>
+      Catseye Systems and Solutions (Apr 2022 - Present)</p>
+      <ul>
+        <li>Migrated R models from Green-plum to CDP database.</li>
+        <li>Developed custom solutions using R, Python, and SQL in collaboration with clients.</li>
+        <li>Automated data processing by scheduling R and Python scripts, improving efficiency.</li>
+        <li>Processed diverse datasets to extract insights, visualized with Tableau and Power Bi.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <p><strong>Masters of Statistics and Data Analytics</strong><br>
+      Symbiosis Statistical Institute (2020 - 2022)</p>
+    </section>
+  </main>
 </body>
 </html>
