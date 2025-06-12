@@ -1,9 +1,8 @@
-/* Base Styling */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #0f172a; /* Dark background */
-  color: #f8f9fa; /* Off-white for general content */
+  background-color: #0f172a;
+  color: #f8f9fa;
 }
 
 .background-overlay {
@@ -12,7 +11,6 @@ body {
   padding-bottom: 2rem;
 }
 
-/* Header styles */
 header {
   text-align: center;
   padding: 3rem 1rem 2rem;
@@ -20,7 +18,7 @@ header {
 
 header h1,
 #animated-text {
-  color: #d3d3d3; /* Light grey for name and animated text */
+  color: #d3d3d3;
 }
 
 header h1 {
@@ -35,7 +33,6 @@ header h1 {
   overflow: hidden;
 }
 
-/* Theme toggle button */
 #theme-toggle {
   margin-top: 1.5rem;
   padding: 0.5rem 1.2rem;
@@ -52,7 +49,6 @@ header h1 {
   background: #666;
 }
 
-/* Main content */
 main {
   max-width: 1000px;
   margin: auto;
@@ -70,7 +66,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Skills and Lists */
 ul {
   list-style-type: none;
   padding: 0;
@@ -87,7 +82,6 @@ ul li {
   color: #f8f9fa;
 }
 
-/* Cards for Projects & Experience */
 .project-card,
 .experience-card {
   background: rgba(255, 255, 255, 0.07);
@@ -98,7 +92,6 @@ ul li {
   margin-bottom: 1rem;
 }
 
-/* Links */
 a {
   color: #88c0ff;
   text-decoration: none;
@@ -108,9 +101,33 @@ a:hover {
   text-decoration: underline;
 }
 
-/* -------------------------- */
-/*         LIGHT MODE         */
-/* -------------------------- */
+/* Resume-style bullet layout */
+.experience-card p {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.experience-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.experience-card ul li {
+  list-style-type: disc;
+  margin-bottom: 0.4rem;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.duration {
+  color: #999;
+  font-weight: normal;
+  font-size: 0.95rem;
+  margin-left: 8px;
+}
+
+/* Light mode override */
 body.dark-mode {
   background-color: #f8fafc;
   color: #111;
@@ -143,4 +160,11 @@ body.dark-mode #theme-toggle {
 
 body.dark-mode #theme-toggle:hover {
   background: #cbd5e1;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
 }
