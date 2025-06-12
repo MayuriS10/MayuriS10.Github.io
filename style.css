@@ -1,7 +1,8 @@
+/* Base Styling */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #0f172a; /* Clean, dark background */
+  background-color: #0f172a; /* Default dark mode */
   color: #fff;
 }
 
@@ -28,6 +29,23 @@ header h1 {
   overflow: hidden;
 }
 
+/* Theme toggle button */
+#theme-toggle {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background: #666;
+}
+
 main {
   max-width: 1000px;
   margin: auto;
@@ -45,6 +63,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* Skills and List Items */
 ul {
   list-style-type: none;
   padding: 0;
@@ -60,6 +79,7 @@ ul li {
   border: 1px solid #999;
 }
 
+/* Cards */
 .project-card, .experience-card {
   background: rgba(255, 255, 255, 0.07);
   padding: 1rem;
@@ -69,6 +89,7 @@ ul li {
   margin-bottom: 1rem;
 }
 
+/* Links */
 a {
   color: #88c0ff;
   text-decoration: none;
@@ -76,4 +97,40 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* -------------------------- */
+/*         LIGHT MODE         */
+/* -------------------------- */
+body.dark-mode {
+  background-color: #f8fafc;
+  color: #111;
+}
+
+body.dark-mode .background-overlay {
+  background-color: rgba(248, 250, 252, 0.95);
+}
+
+body.dark-mode a {
+  color: #0077cc;
+}
+
+body.dark-mode ul li,
+body.dark-mode .project-card,
+body.dark-mode .experience-card {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #ccc;
+}
+
+body.dark-mode h2 {
+  border-color: #444;
+}
+
+body.dark-mode #theme-toggle {
+  background: #e2e8f0;
+  color: #111;
+}
+
+body.dark-mode #theme-toggle:hover {
+  background: #cbd5e1;
 }
