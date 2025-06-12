@@ -5,37 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mayuri Sandge | Data Analyst</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Mayuri Sandge</h1>
-    <div class="animated-role">
-      <span id="animated-role-text">Data Analyst</span>
-    </div>
+    <p id="role">Data Analyst | Data storyteller powered by Python, R, SQL, and Power BI</p>
   </header>
 
-  <script>
-    const roles = [
-      "Data Analyst",
-      "Data storyteller powered by Python, R, SQL, and Power BI"
-    ];
-    let index = 0;
-    const roleText = document.getElementById("animated-role-text");
+  <section id="about">
+    <h2>About Me</h2>
+    <p>A statistics student captivated by the interplay of data to solve real-life problems and contribute to meaningful decision-making. I love storytelling with data, automation, and analytics.</p>
+  </section>
 
-    setInterval(() => {
-      index = (index + 1) % roles.length;
-      roleText.classList.add("fade-out");
-      setTimeout(() => {
-        roleText.textContent = roles[index];
-        roleText.classList.remove("fade-out");
-        roleText.classList.add("fade-in");
-      }, 500);
-      setTimeout(() => {
-        roleText.classList.remove("fade-in");
-      }, 1000);
-    }, 4000);
-  </script>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>R</li>
+      <li>SQL</li>
+      <li>Power BI</li>
+      <li>Machine Learning</li>
+      <li>Data Cleaning</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Farmer Income Prediction</h3>
+      <p>Built a predictive model using XGBoost and preprocessing pipelines to forecast farmer incomes using socioeconomic, land, and weather data.</p>
+    </div>
+    <div class="project">
+      <h3>Resume Parser App</h3>
+      <p>Developed a Streamlit application to extract structured JSON from resumes with support for contact info, skills, experience, education, and certifications.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mayurisandge@gmail.com">mayurisandge@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/mayuris10" target="_blank">mayuris10</a></p>
+  </section>
 </body>
 </html>
