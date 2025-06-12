@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #0f172a; /* Default dark mode */
-  color: #fff;
+  background-color: #0f172a; /* Dark background */
+  color: #f8f9fa; /* Off-white for general content */
 }
 
 .background-overlay {
@@ -12,9 +12,15 @@ body {
   padding-bottom: 2rem;
 }
 
+/* Header styles */
 header {
   text-align: center;
   padding: 3rem 1rem 2rem;
+}
+
+header h1,
+#animated-text {
+  color: #d3d3d3; /* Light grey for name and animated text */
 }
 
 header h1 {
@@ -46,6 +52,7 @@ header h1 {
   background: #666;
 }
 
+/* Main content */
 main {
   max-width: 1000px;
   margin: auto;
@@ -63,7 +70,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Skills and List Items */
+/* Skills and Lists */
 ul {
   list-style-type: none;
   padding: 0;
@@ -77,10 +84,12 @@ ul li {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 1px solid #999;
+  color: #f8f9fa;
 }
 
-/* Cards */
-.project-card, .experience-card {
+/* Cards for Projects & Experience */
+.project-card,
+.experience-card {
   background: rgba(255, 255, 255, 0.07);
   padding: 1rem;
   border-radius: 10px;
@@ -120,6 +129,7 @@ body.dark-mode .project-card,
 body.dark-mode .experience-card {
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid #ccc;
+  color: #111;
 }
 
 body.dark-mode h2 {
