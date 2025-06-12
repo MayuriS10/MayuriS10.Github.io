@@ -20,7 +20,7 @@ header h1 {
   margin: 0;
   font-size: 2rem;
   font-weight: bold;
-  color: #222;
+  color: #ffffff;
 }
 
 header h2 {
@@ -62,6 +62,7 @@ header h2 {
 /* Section */
 .section {
   background-color: #ffffff;
+  color: #222; /* Dark text for readability */
   padding: 2rem 1rem;
   border-top: 1px solid #ddd;
 }
