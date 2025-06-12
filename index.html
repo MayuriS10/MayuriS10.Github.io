@@ -7,17 +7,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background-overlay">
+  <div class="container">
     <header>
       <h1>Mayuri Sandge</h1>
-      <div id="animated-text"></div>
-      <button id="theme-toggle">Toggle Light/Dark Mode</button>
+      <p class="subtitle">Data Analyst</p>
     </header>
 
     <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>A statistics student captivated by the interplay of data to solve real-life problems and contribute to impactful solutions. Adept in machine learning, SQL, Python, and R with a passion for fraud analytics and market intelligence.</p>
+      </section>
+
       <section id="skills">
         <h2>Skills</h2>
-        <ul>
+        <ul class="skill-list">
           <li>GitHub</li>
           <li>Predictive modeling</li>
           <li>Statistical modeling</li>
@@ -53,26 +57,6 @@
         </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-          <h3>Circular Trading Model</h3>
-          <p>A circular trading model using KNN clustering detects groups trading among themselves to manipulate share prices.</p>
-        </div>
-        <div class="project-card">
-          <h3>Pump and Dump Model</h3>
-          <p>A Python model detects false trading by identifying "pump and dump" schemes, where stocks are bought in bulk to inflate prices and sold within 10 minutes to manipulate the market.</p>
-        </div>
-        <div class="project-card">
-          <h3>Consumer Behavior Analysis for FMCG</h3>
-          <p>The objective of the paper is to analyze the behavior of consumers towards fast moving consumer goods using One Way ANOVA for determining financial performance.</p>
-        </div>
-        <div class="project-card">
-          <h3>Insider Model</h3>
-          <p>Logistics regression techniques are used to catch brokers who have done insider trades.</p>
-        </div>
-      </section>
-
       <section id="links">
         <h2>Links</h2>
         <ul>
@@ -87,40 +71,5 @@
       <p>© 2025 Mayuri Sandge. All rights reserved.</p>
     </footer>
   </div>
-
-  <script>
-    const phrases = ["Data Analyst", "Data storyteller powered by Python, R, SQL, and Power BI"];
-    let i = 0, j = 0, current = [], isDeleting = false;
-    const element = document.getElementById("animated-text");
-
-    function type() {
-      element.innerHTML = current.join("");
-      if (!isDeleting && j <= phrases[i].length) {
-        current.push(phrases[i][j++]);
-      } else if (isDeleting && j >= 0) {
-        current.pop();
-        j--;
-      }
-
-      if (j === phrases[i].length + 1) {
-        isDeleting = true;
-        setTimeout(type, 1000);
-        return;
-      }
-
-      if (isDeleting && j === 0) {
-        isDeleting = false;
-        i = (i + 1) % phrases.length;
-      }
-
-      setTimeout(type, isDeleting ? 50 : 100);
-    }
-
-    type();
-
-    document.getElementById("theme-toggle").onclick = () => {
-      document.body.classList.toggle("dark-mode");
-    };
-  </script>
 </body>
 </html>
