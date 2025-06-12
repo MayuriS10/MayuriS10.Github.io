@@ -1,61 +1,75 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: #f0f0f0;
-  color: #333;
-  line-height: 1.6;
+  background: url('https://images.unsplash.com/photo-1549921296-3a6b77d5d56d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 header {
-  background: #222;
-  color: white;
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 3rem 1rem 2rem;
 }
 
 header h1 {
+  font-size: 3rem;
   margin: 0;
-  font-size: 2.5rem;
 }
 
 #role {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
 }
 
 section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  margin-bottom: 2rem;
 }
 
 h2 {
-  border-bottom: 2px solid #ccc;
+  font-size: 2rem;
+  border-bottom: 2px solid #888;
   padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 ul li {
-  background: #e0e0e0;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
   border-radius: 5px;
+  border: 1px solid #999;
 }
 
-.project {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.project-card, .experience-card {
+  background: rgba(255, 255, 255, 0.1);
   padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
   margin-bottom: 1rem;
 }
 
 a {
-  color: #0066cc;
+  color: #88c0ff;
   text-decoration: none;
 }
 
