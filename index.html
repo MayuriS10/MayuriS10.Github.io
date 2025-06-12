@@ -11,7 +11,7 @@
   <div class="background-overlay">
     <header>
       <h1>Mayuri Sandge</h1>
-      <p id="animated-text"></p>
+      <p id="role">Data Analyst | Data storyteller powered by Python, R, SQL, and Power BI</p>
     </header>
 
     <main>
@@ -27,98 +27,38 @@
           <li>R</li>
           <li>SQL</li>
           <li>Power BI</li>
-          <li>GitHub</li>
-          <li>Predictive Modeling</li>
-          <li>Statistical Modeling</li>
-          <li>Fraud Detection Analysis</li>
-          <li>Windows</li>
-          <li>Market Mix Modeling</li>
-          <li>Artificial Intelligence</li>
-          <li>Regression</li>
-          <li>Classification</li>
           <li>Machine Learning</li>
-          <li>Data Cleaning and Model Evaluation, Optimization</li>
+          <li>Data Cleaning</li>
         </ul>
       </section>
 
       <section id="experience">
         <h2>Experience</h2>
         <div class="experience-card">
-          <h3>Catseye Systems and Solutions | Data Analyst</h3>
-          <p><strong>Apr 2022 – Now | Mumbai</strong></p>
-          <ul>
-            <li>Migrated R models from Green-plum to CDP database.</li>
-            <li>Developed custom solutions using R, Python, and SQL in collaboration with clients.</li>
-            <li>Automated data processing by scheduling R and Python scripts, improving efficiency.</li>
-            <li>Processed diverse datasets to extract insights, visualized with Tableau and Power BI.</li>
-          </ul>
+          <h3>Data Analyst – Catseye Services</h3>
+          <p><strong>Duration:</strong> 2021 – 2024</p>
+          <p>Led end-to-end analytics projects using RStudio and SQL, delivered insights for financial datasets, and automated reports and dashboards to improve business decision-making.</p>
         </div>
       </section>
 
       <section id="projects">
         <h2>Projects</h2>
         <div class="project-card">
-          <h3>Circular Trading Model</h3>
-          <p>A circular trading model using KNN clustering detects groups trading among themselves to manipulate share prices.</p>
+          <h3>Farmer Income Prediction</h3>
+          <p>Built a predictive model using XGBoost and preprocessing pipelines to forecast farmer incomes using socioeconomic, land, and weather data.</p>
         </div>
         <div class="project-card">
-          <h3>Pump and Dump Model</h3>
-          <p>A Python model detects false trading by identifying "pump and dump" schemes, where stocks are bought in bulk to inflate prices and sold within 10 minutes to manipulate the market.</p>
-        </div>
-        <div class="project-card">
-          <h3>Consumer Behavior Analysis for FMCG</h3>
-          <p>The objective of the paper is to analyze the behavior of consumers towards fast moving consumer goods. Utilized one-way ANOVA for determining financial performance.</p>
-        </div>
-        <div class="project-card">
-          <h3>Insider Model</h3>
-          <p>Logistics regression techniques are used in order to catch the brokers who have done the insider trades.</p>
-        </div>
-      </section>
-
-      <section id="education">
-        <h2>Education</h2>
-        <div class="project-card">
-          <h3>Symbiosis Statistical Institute</h3>
-          <p><strong>Master of Statistics and Data Analytics</strong></p>
-          <p>June 2020 – June 2022 | Pune</p>
-          <p>Cum. GPA: 7.0/10.0</p>
-          <p>Responsibilities: Women cell representative, Campus wellness and advisory committee representative.</p>
+          <h3>Resume Parser App</h3>
+          <p>Developed a Streamlit application to extract structured JSON from resumes with support for contact info, skills, experience, education, and certifications.</p>
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:mayurisandge@gmail.com">mayurisandge@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/MayuriS10" target="_blank">MayuriS10</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/mayuri-sandge" target="_blank">mayuri-sandge</a></p>
-        <p>HackerRank: <a href="https://hackerrank.com/mayurisandge" target="_blank">mayurisandge</a></p>
+        <p>GitHub: <a href="https://github.com/mayuris10" target="_blank">mayuris10</a></p>
       </section>
     </main>
   </div>
-  <script>
-    const texts = [
-      "Data Analyst",
-      "Data storyteller powered by Python, R, SQL, and Power BI"
-    ];
-    let count = 0;
-    let index = 0;
-    let currentText = '';
-    let letter = '';
-
-    (function type(){
-      if (count === texts.length) count = 0;
-      currentText = texts[count];
-      letter = currentText.slice(0, ++index);
-
-      document.getElementById('animated-text').textContent = letter;
-      if(letter.length === currentText.length){
-        count++;
-        index = 0;
-        setTimeout(type, 1500);
-      } else {
-        setTimeout(type, 100);
-      }
-    }());
-  </script>
 </body>
-                                                                                  </html>
+</html>
