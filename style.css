@@ -1,13 +1,12 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: url('https://images.unsplash.com/photo-1549921296-3a6b77d5d56d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
-  background-size: cover;
+  background-color: #0f172a; /* Clean, dark background */
   color: #fff;
 }
 
 .background-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(15, 23, 42, 0.95);
   min-height: 100vh;
   padding-bottom: 2rem;
 }
@@ -22,9 +21,11 @@ header h1 {
   margin: 0;
 }
 
-#role {
+#animated-text {
   font-size: 1.3rem;
   margin-top: 1rem;
+  height: 2rem;
+  overflow: hidden;
 }
 
 main {
@@ -60,11 +61,11 @@ ul li {
 }
 
 .project-card, .experience-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
   padding: 1rem;
   border-radius: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+  border: 1px solid #444;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
   margin-bottom: 1rem;
 }
 
