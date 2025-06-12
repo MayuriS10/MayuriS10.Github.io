@@ -1,78 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mayuri Sandge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayuri Sandge | Data Analyst</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="container">
-      <h1>Mayuri Sandge</h1>
-      <p>Data Analyst | Freelancer</p>
-    </div>
-  </nav>
-  <header class="hero">
-    <div class="container">
-      <p class="tagline">A statistics student captivated by the interplay of data to solve real-life problems and contribute to the growth of mankind.</p>
-      <div class="contact-info">
-        <p>Email: <a href="mailto:mayurisandge@gmail.com">mayurisandge@gmail.com</a></p>
-        <p>Phone: 8976142009 | Mumbai, Maharashtra</p>
-        <p>
-          <a href="https://github.com/MayuriS10" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/mayuri-sandge-22aa7a1b5" target="_blank">LinkedIn</a> |
-          <a href="https://www.hackerrank.com/profile/mayurisandge" target="_blank">HackerRank</a>
-        </p>
-      </div>
+  <header>
+    <h1>Mayuri Sandge</h1>
+    <div class="animated-role">
+      <span id="animated-role-text">Data Analyst</span>
     </div>
   </header>
-  <main class="container">
-    <section>
-      <h2>Skills</h2>
-      <h3>Programming</h3>
-      <ul>
-        <li>Python</li>
-        <li>R-studio</li>
-        <li>SQL</li>
-        <li>Power BI</li>
-        <li>Excel</li>
-      </ul>
-      <h3>Technology</h3>
-      <ul>
-        <li>GitHub</li>
-        <li>Predictive modeling</li>
-        <li>Statistical modeling</li>
-        <li>Fraud detection analysis</li>
-        <li>Market mix modeling</li>
-        <li>Artificial Intelligence</li>
-        <li>Regression</li>
-        <li>Classification</li>
-        <li>Machine learning</li>
-        <li>Data Cleaning and model evaluation, optimization</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Work Experience</h2>
-      <p><strong>Data Analyst</strong> – Catseye Systems and Solutions (Apr 2022 – Present)</p>
-      <ul>
-        <li>Migrated R models from Green-plum to CDP database.</li>
-        <li>Developed custom solutions using R, Python, and SQL in collaboration with clients.</li>
-        <li>Automated data processing by scheduling R and Python scripts, improving efficiency.</li>
-        <li>Processed diverse datasets to extract insights, visualized with Tableau and Power Bi.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Education</h2>
-      <p><strong>Masters of Statistics and Data Analytics</strong><br>Symbiosis Statistical Institute (2020 – 2022)</p>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Mayuri Sandge. All rights reserved.</p>
-    </div>
-  </footer>
+
+  <script>
+    const roles = [
+      "Data Analyst",
+      "Data storyteller powered by Python, R, SQL, and Power BI"
+    ];
+    let index = 0;
+    const roleText = document.getElementById("animated-role-text");
+
+    setInterval(() => {
+      index = (index + 1) % roles.length;
+      roleText.classList.add("fade-out");
+      setTimeout(() => {
+        roleText.textContent = roles[index];
+        roleText.classList.remove("fade-out");
+        roleText.classList.add("fade-in");
+      }, 500);
+      setTimeout(() => {
+        roleText.classList.remove("fade-in");
+      }, 1000);
+    }, 4000);
+  </script>
 </body>
 </html>
