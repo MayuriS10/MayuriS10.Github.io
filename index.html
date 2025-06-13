@@ -2,105 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mayuri Sandge - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mayuri Sandge | Data Analyst</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <h1>Mayuri Sandge</h1>
-    <div class="animated-title">
-      <div class="word">Data Analyst</div>
-      <div class="word">Data storyteller powered by R, Python, SQL, and Power BI</div>
+    <div class="container">
+      <h1>Mayuri Sandge</h1>
+      <p class="subtitle">
+        <span class="word">Data Analyst</span>
+        <span class="word">Data storyteller powered by Python, R, SQL & Power BI</span>
+      </p>
     </div>
   </header>
 
-   <section class="section" id="about">
-    <h2>About</h2>
-    <p>Armed with a postgraduate degree in Statistics and Data Analytics from Symbiosis Statistical Institute, this data storyteller bridges the gap between numbers and narratives. With over 3.1 years of experience turning raw data into meaningful business solutions, every dataset becomes a canvas for uncovering insights. Blending statistical precision with creative problem-solving, the work spans across Python, R, SQL, Power BI, Tableau, and cutting-edge machine learning techniques. Whether it's building predictive models or designing real-time dashboards, each solution is crafted with clarity, accuracy, and business impact in mind. From on-premise systems to modern cloud platforms, consistently delivers data products that are not just technically sound, but strategically aligned. Driven by curiosity, guided by logic, and always rooted in the belief that good data leads to great decisions.</p>
-  </section>
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>A Statistics and Data Analytics post-graduate with 3.1+ years of experience in interpreting and analyzing complex data to drive business decisions. Adept in Python, R, SQL, Power BI, Tableau, and Machine Learning.</p>
+    </section>
 
-  <section class="section" id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>GitHub</li>
-      <li>Predictive Modeling</li>
-      <li>Statistical Modeling</li>
-      <li>Fraud Detection Analysis</li>
-      <li>Windows</li>
-      <li>Market Mix Modeling</li>
-      <li>Artificial Intelligence</li>
-      <li>Regression</li>
-      <li>Classification</li>
-      <li>Machine Learning</li>
-      <li>Data Cleaning and Model Evaluation, Optimization</li>
-  </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>CATSEYE SYSTEMS AND SOLUTIONS | Data Analyst (Apr 2022 – Now)</h3>
+      <ul>
+        <li>Migrated R models from Greenplum to CDP database.</li>
+        <li>Developed custom solutions using R, Python, and SQL in collaboration with clients.</li>
+        <li>Automated data processing using scheduled R/Python scripts.</li>
+        <li>Created interactive dashboards in Tableau and Power BI.</li>
+      </ul>
+    </section>
 
-  <section class="section" id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-       <h4>Farmer Income Prediction</h4>
-       <li>Built a machine learning model to accurately predict farmer income based on demographic, climatic, landholding, and socio-economic indicators.</li>
-       <li>Performed extensive data preprocessing, feature engineering, and outlier handling to ensure model robustness.</li>
-       <li>Used XGBoost regression optimized with cross-validation and hyperparameter tuning to minimize MAPE (Mean Absolute Percentage Error).</li>
-       <li>Incorporated both traditional and alternative data sources to reflect real-world income drivers such as rainfall, crop type, and land size.</li>
-       <li>Designed the model to support credit risk assessment, helping agri-lenders and financial institutions make informed decisions.</li>
-    </div>
-     <div class="project">
-      <h4>Consumer Behavior Analysis for FMCG</h4>
-      <li>Collected and analyzed survey data to study consumer behavior and buying patterns in the FMCG sector.</li>
-      <li>Applied One-Way ANOVA to identify statistically significant differences across consumer groups.</li>
-      <li>Interpreted behavioral insights to evaluate their impact on key financial metrics.</li>
-      <li>Designed visual reports and summaries to present findings effectively for academic and strategic use.</li>
-      <li>Documented core findings and proposed actionable recommendations based on data insights.</li>
-    </div>
-      <div class="project">
-       <h4>Circular Trading Model</h4>
-       <li>Collected and preprocessed cash and FAO segment trade data.</li>
-       <li>Engineered features representing trading relationships and volumes.</li>
-       <li>Applied KNN clustering to detect suspicious clusters indicating potential circular trading.</li>
-       <li>Validated flagged entities using domain rules and integrated alerts into the monitoring dashboard.</li>
-       <li>Collaborated with compliance and surveillance teams for refining model thresholds.</li>
-    </div>
-    <div class="project">
-      <h4>Pump and Dump Model</h4>
-      <li>Analyzed high-frequency intraday trading data to detect short-term spikes in price and volume, indicating potential market manipulation.</li>
-      <li>Designed rule-based thresholds and custom time-window logic to systematically flag suspicious trading activities.</li>
-      <li>Developed visual dashboards and investigative logs to support compliance reviews and regulatory audits.</li>
-      <li>Seamlessly integrated the model into daily trade surveillance workflows, enhancing detection accuracy and operational efficiency.</li>
-      <li>Contributed to reducing false positives and streamlining surveillance efforts through iterative refinement and collaboration with compliance teams.</li>
-    </div>
-  </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>GitHub</li>
+        <li>Predictive Modeling</li>
+        <li>Statistical Modeling</li>
+        <li>Fraud Detection Analysis</li>
+        <li>Windows</li>
+        <li>Market Mix Modeling</li>
+        <li>Artificial Intelligence</li>
+        <li>Regression</li>
+        <li>Classification</li>
+        <li>Machine Learning</li>
+        <li>Data Cleaning</li>
+        <li>Model Evaluation & Optimization</li>
+      </ul>
+    </section>
 
-  <section class="section" id="experience">
-    <h2>Work Experience</h2>
-    <p><strong>Data Analyst</strong> – Catseye Systems and Solutions (Apr 2022 – Present)</p>
-    <ul>
-      <li>Migrated R models from Green-plum to CDP database.</li>
-      <li>Developed custom solutions using R, Python, and SQL in collaboration with clients.</li>
-      <li>Automated data processing by scheduling R and Python scripts, improving efficiency.</li>
-      <li>Processed diverse datasets to extract insights, visualized with Tableau and Power BI.</li>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Circular Trading Model:</strong> KNN clustering to detect trade manipulation rings.</li>
+        <li><strong>Pump and Dump Model:</strong> Python-based detection of manipulated bulk trades sold within 10 minutes.</li>
+        <li><strong>Consumer Behavior Analysis:</strong> One-way ANOVA and survey analysis on FMCG consumption behavior.</li>
+        <li><strong>Insider Trading Model:</strong> Logistic regression to flag insider activities by brokers.</li>
+      </ul>
+    </section>
 
-  <section class="section" id="education">
-    <h2>Education</h2>
-    <p><strong>Masters of Statistics and Data Analytics</strong><br/>
-    Symbiosis Statistical Institute (2020 – 2022)</p>
-    <p></em><br/>Roles: <li>Women cell representative<li>
-    <li>Campus wellness and advisory committee representative<li>
-  </section>
+    <section id="education">
+      <h2>Education</h2>
+      <h3>Symbiosis Statistical Institute</h3>
+      <p>Master of Statistics and Data Analytics<br/>June 2020 – June 2022 | Pune<br/>CGPA: 7.0/10</p>
+    </section>
 
-  <section class="section" id="links">
-    <h2>Links</h2>
-    <ul>
-      <li>GitHub: <a href="https://github.com/MayuriS10">MayuriS10</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/mayuri-sandge">mayuri-sandge</a></li>
-      <li>HackerRank: <a href="https://www.hackerrank.com/mayurisandge">mayurisandge</a></li>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>GitHub:</strong> github.com/MayuriS10</li>
+        <li><strong>LinkedIn:</strong> linkedin.com/in/mayuri-sandge</li>
+        <li><strong>HackerRank:</strong> hackerrank.com/mayurisandge</li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Mayuri Sandge. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
