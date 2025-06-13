@@ -1,92 +1,65 @@
-/* Base styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 body {
-  font-family: system-ui, sans-serif;
-  background-color: #ffffff;
-  color: #222;
-  line-height: 1.6;
-}
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem 1rem;
-}
-
-/* Header */
-header {
-  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: white;
   color: #333;
-  text-align: center;
-  padding: 4rem 1rem;
-}
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.subtitle {
-  position: relative;
-  height: 1.5em;
-  overflow: hidden;
-  font-size: 1.1rem;
-}
-.word {
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  animation: rotate 6s linear infinite;
-}
-.word:nth-child(1) {
-  animation-delay: 0s;
-}
-.word:nth-child(2) {
-  animation-delay: 3s;
-}
-@keyframes rotate {
-  0%   { opacity: 0; transform: translateY(100%); }
-  10%  { opacity: 1; transform: translateY(0); }
-  40%  { opacity: 1; transform: translateY(0); }
-  50%  { opacity: 0; transform: translateY(-100%); }
-  100% { opacity: 0; transform: translateY(-100%); }
 }
 
-/* Sections */
-section {
-  padding: 2rem 0;
+header {
+  background: #f5f5f5;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.animated-title .word {
+  font-size: 1.2em;
+  animation: fade 5s infinite;
+  color: #777;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+
+.hero-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.section {
+  padding: 2em;
+  background: #fff;
   border-bottom: 1px solid #ddd;
 }
-section:last-child {
-  border: none;
-}
-h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  color: #444;
-}
-h3 {
-  font-size: 1.1rem;
-  margin: 1rem 0 0.5rem;
-}
-ul {
-  padding-left: 1.5rem;
-}
-ul li {
-  margin-bottom: 0.5rem;
-}
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 0.5rem;
+
+.section h2 {
+  color: #2c3e50;
+  margin-bottom: 1em;
 }
 
-/* Footer */
+.project {
+  margin-bottom: 2em;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 1em 0;
+  border-radius: 8px;
+}
+
 footer {
-  background-color: #f0f0f0;
+  background: #f5f5f5;
+  padding: 1em;
   text-align: center;
-  padding: 1.5rem 1rem;
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 0.9em;
 }
